@@ -57,8 +57,9 @@
 
 				<ul>
 					<li>SAPUI5 Developer @ SAP</li>
+					<li>SAP Mentor</li>
 					<li>&hearts; JavaScript</li>
-					<li>HCP (HTML5), HANA XS, ABAP, OData</li>
+					<li>HCP (HTML5), HANA XS, OData, ABAP</li>
 					<li>Austrian</li>
 					<li>Nerd</li>
 				</ul>
@@ -71,10 +72,11 @@
 				<ul>
 					<li>Terms and Definitions</li>
 					<li>Motivation</li>
-					<li>Technolgy</li>
+					<li>Technology</li>
 					<li>Demo</li>
 					<li>The joy of HANA XSODATA</li>
 					<li>Pitfalls</li>
+					<li>Outlook</li>
 					<li>Conclusion</li>
 					<li>Appendix - Ressources</li>
 				</ul>
@@ -84,7 +86,7 @@
 				<h2>Terms and Definitions</h2>
 				
 				<ul>
-					<li>SAP HANA: in-memory column store datbase</li>
+					<li>SAP HANA: in-memory column store database</li>
 					<li>SAP HANA XS: lightweight application server</li>
 					<li>SAP HCP: PaaS (Platform-as-a-Service)</li>
 					<li>SAPUI5: HTML5 framework</li>
@@ -115,7 +117,9 @@
 				<ul>
 					<li>Front-End: SAPUI5</li>
 					<li>Back-End: SAP HANA XS OData</li>
+					<li>HANA Trial: SP08</li>
 					<li>Hosting: HCP trial account</li>
+					<li>Availability: TODAY</li>
 					<li>Development: Web based IDEs</li>
 					<li>Language: JavaScript</li>
 					<li>Price: free</li>
@@ -126,6 +130,9 @@
 				<h2>Demo</h2>
 				<p>
 					<a href="https://s8hanaxs.hanatrial.ondemand.com/d062712trial/dev/todoapp/index.html" target="_blank"><img width="300" data-src="img/todoapp.png" /></a>
+				</p>
+				<p>
+					<a href="https://s8hanaxs.hanatrial.ondemand.com/sap/hana/xs/ide/editor/index.html?startURI=d062712trial/dev/todoapp" target="_blank">Project in SAP HANA IDE</a>
 				</p>
 			</section>
 
@@ -216,12 +223,6 @@ service {
 				</section>
 
 				<section>
-					<h2>SAP Web IDE data connection</h2>
-
-					<img width="500" data-src="img/webide_data_connection.png">
-				</section>
-
-				<section>
 					<h2>Example: deployed HTML5 app</h2>
 
 					<img width="500" data-src="img/host_html5_app.png">
@@ -232,6 +233,12 @@ service {
 
 					<img width="500" data-src="img/destination_todoapp.png">
 
+				</section>
+				
+				<section>
+					<h2>SAP Web IDE data connection</h2>
+
+					<img width="500" data-src="img/webide_data_connection.png">
 				</section>
 
 				<section>
@@ -396,7 +403,7 @@ this.oDataModel.setUseBatch(false);
 				</section>
 
 				<section>
-					<h2>Exmaple</h2>
+					<h2>Example</h2>
 
 					<h3>Problem:</h3>
 
@@ -504,20 +511,45 @@ onToggleCompleted: function(oEvent) {
 					<br>possiblity to use .hdbsequence &amp; procedure for CREATE</p>
 				<p>Investigate in sap.ui.model.message.MessageModel for message handling</p>
 			</section>
+			
+			<section>
+				<h2>Outlook</h2>
+				
+				<h3>Buzzwords I heard at SAP TechEd</h3>
+				
+				<ul>
+					<li>XS Advanced</li>
+					<li>Node.js</li>
+					<li>Git</li>
+					<li>Cloud Foundry</li>
+					<li>SAP Web IDE (SAPUI5 + HANA Dev)</li>
+				</ul>
+				
+				<p>Look at Thomas Jung's <a href="http://scn.sap.com/community/developer-center/hana/blog/2015/12/08/sap-hana-sps-11-new-developer-features" target="_blank">excellent blog series</a></p>
+			</section>
 
 			<section>
 				<h2>Conclusion</h2>
-
-				<p>some drawbacks</p>
-				<p>few "not-so-obvious" pitfalls</p>
-
-				<h3>BUT</h3>
-
-				<p>fully functional SAPUI5 app with backend</p>
-				<p>simple and fast creation of CRUD service</p>
-				<p>perfect for small private projects/PoCs</p>
-				<p>no strings attached - trial = FREE</p>
-				<p>development in the cloud - in your browser</p>
+				
+				<div class="fragment">
+					<h3 style="color: #F97474;">Cons:</h3>
+					<ul>
+						<li>some drawbacks</li>
+						<li>few "not-so-obvious" pitfalls</li>
+						<li>no anonymous access</li>
+					</ul>
+				</div>
+				
+				<div class="fragment">
+					<h3 style="color: #00B233;">Pros:</h3>
+					<ul>
+						<li>fully functional SAPUI5 app with backend</li>
+						<li>simple and fast creation of CRUD service</li>
+						<li>perfect for small private projects/PoCs</li>
+						<li>no strings attached - trial = FREE</li>
+						<li>development in the cloud - in your browser</li>
+					</ul>
+				</div>
 			</section>
 
 			<section>
@@ -538,6 +570,8 @@ onToggleCompleted: function(oEvent) {
 						<a href="http://bit.ly/1REhpIb" target="_blank">Workshop Material from EU CodeWeek 2015</a></li>
 					<li>
 						<a href="https://github.com/SAP/cloud-hana-shine-sp8" target="_blank">SAP HANA SHINE source SP8</a></li>
+					<li>
+						<a href="http://scn.sap.com/community/developer-center/hana/blog/2015/12/08/sap-hana-sps-11-new-developer-features" target="_blank">Thomas Jung's XS Advanced blog series</a></li>
 				</ul>
 			</section>
 		</div>
